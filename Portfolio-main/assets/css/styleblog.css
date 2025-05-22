@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+    color: #333; /* Cor do texto do cabeçalho */
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 50%; /* Reduzi a largura para acomodar a coluna da direita */
+    margin-left:10%;
+}
+
+.rightcolumn {
+    float: right; /* Adicionado para posicionar a coluna à direita */
+    width: 25%; /* Largura da coluna da direita */
+    margin-left: 5%; /* Adicionado espaço entre as colunas */
+}
+
+.rightcolumn .card {
+    margin-bottom: 20px;
+}
+
+.rightcolumn h2, .rightcolumn h3 {
+    margin-top: 0;
+    color: #333; /* Cor do texto dos títulos da coluna direita */
+}
+
+.rightcolumn img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.rightcolumn .card p {
+    text-align: justify;
+    color: #555; /* Cor do texto do conteúdo da coluna direita */
+}
+
+.rightcolumn .card a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rightcolumn .card a:hover {
+    background-color: #ddd;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adiciona sombra aos cards */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centralizar o texto */
+}
+
+.footer .social-links {
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover espaçamento interno */
+}
+
+.footer .social-links li {
+    display: inline-block; /* Exibir os ícones de mídia social na mesma linha */
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.footer .social-links li:last-child {
+    margin-right: 0; /* Remover o espaçamento à direita do último ícone */
+}
+
+.footer .social-links a {
+    color: #fff; /* Cor dos ícones de mídia social */
+    text-decoration: none; /* Remover sublinhado dos links */
+    transition: color 0.3s ease; /* Adicionar transição de cor suave */
+}
+
+.footer .social-links a:hover {
+    color: #FFFAF1; /* Cor do ícone de mídia social ao passar o mouse */
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Adicionando estilos específicos para o blog sobre Redes Neurais Convolucionais */
+.card img { 
+    width: 100%;
+}
+.card p {
+    text-align: justify;
+}
